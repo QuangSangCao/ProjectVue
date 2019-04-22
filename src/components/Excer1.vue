@@ -1,5 +1,6 @@
 <template>
   <div id="Excer1">
+    <h1>Excercise 1 : </h1>
     <b-button variant="warning" @click="Switch">Switch</b-button>
     <p v-if="onsWitch">Show/Hide</p>
     <p v-show="onsWitch">Show/Hide</p>
@@ -11,7 +12,7 @@
 export default {
   data() {
     return {
-      onsWitch: true
+      onsWitch: false
     };
   },
   methods: {
@@ -28,5 +29,11 @@ export default {
   text-align: center;
   color:blueviolet;
   margin-top: 60px;
+}
+div h1{
+  color: aqua;
+}
+div p {
+  margin-left: 20%;
 }
 </style>

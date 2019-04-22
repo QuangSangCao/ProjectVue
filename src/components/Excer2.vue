@@ -1,5 +1,6 @@
 <template>
   <div id="Excer2">
+    <h1>Excercise 2 : </h1>
       <b-button variant="warning" @click="addItems">Add</b-button>
     <ul>
       <li v-for="(item, index) in items" :key="index" :class="setColor(index)">{{index}}</li>
@@ -50,5 +51,8 @@ export default {
   text-align: center;
   color:rgb(230, 199, 24);
   margin-top: 60px;
+}
+div h1{
+  color: aqua;
 }
 </style>

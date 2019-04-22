@@ -1,9 +1,9 @@
 <template>
   <div id="Excer3">
+    <h1>Excercise 3 : </h1>
     <ul>
      
       <li v-for="(item, index) in items" :key="index">
-        {{index}}
         <div
           v-for="(value, key, index) in item"
           :key="index"
@@ -37,5 +37,8 @@ div ul li {
   text-align: center;
   color: darkgoldenrod;
 }
-
+div h1{
+  color: aqua;
+  text-align: center;
+}
 </style>
